@@ -1,0 +1,102 @@
+body {
+  background: #000;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #FFF;
+  opacity: .65;
+}
+
+.cube {
+  position: relative;
+  margin: 80px auto;
+  height: 200px;
+  width: 200px;
+  transform-style:preserve-3d;
+}
+
+.cube div {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  -moz-cube-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+  animation:rotate 15s infinite linear;
+}
+
+.cube.deconstructed {
+  opacity: 0.5;
+}
+
+.cube.deconstructed div {
+  position: relative;
+}
+
+.cube div.side1 {
+  background:rgba(0,102,153,.5);
+  background:rgba(0, 170, 255, 0.7);
+  transform:translateZ(100px);
+}
+.cube div.side2 {
+  background:rgba(150,153,0,.7);
+  background:rgba(206, 210, 5, 0.7);
+  transform:rotateY(90deg) translateZ(100px);
+}
+.cube div.side3 {
+  background:rgba(39,116,61,.7);
+  background:rgba(66, 183, 99, 0.7);
+  transform:rotateY(180deg) translateZ(100px);
+}
+.cube div.side4 {
+  background:rgba(105,136,165,.7);
+  background: rgba(158, 194, 228, 0.7);
+  transform:rotateY(-90deg) translateZ(100px);
+}
+.cube div.side5 {
+  background:rgba(223,48,48,.7);
+  background:rgba(255, 109, 109, 0.7);
+  transform:rotateX(-90deg) translateZ(100px) rotate(180deg);
+}
+.cube div.side6 {
+  background:rgba(144,153,102,.7);
+  background:rgba(242, 255, 181,.7);
+  transform:rotateX(90deg) translateZ(100px);
+}
+
+
+
+
+
+.control-container {
+  /*position: relative;
+  z-index: 4;
+  display: inline-block;
+  padding: 50px;
+  background: #2eca2e;
+  border-radius: 200px;
+  margin: 0 -48px;
+  border: 9px #398826 solid;*/
+}
+
+.control {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background: #FFF;
+  display: inline-block;
+  background: #333;
+  border: 3px #ffffff solid;
+  margin-top: 3rem;
+  /*opacity: .65;*/
+  /*box-shadow: 1px 1px 2rem #bbbbbb;*/
+  /*background: #FFF;*/
+}
+
+.control div {
+  position: absolute;
+  width: 6px;
+  height: 26px;
+  background: #FFF;
+  top: 6px;
+  right: 46px;
+}
